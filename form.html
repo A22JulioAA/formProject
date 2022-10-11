@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+
+    <style>
+        html{
+            background-color: antiquewhite;
+        }
+
+        label{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="service.php" method="post">
+        
+        <label for="name" >Name: </label>
+        <input type="text" name="name" id="name" maxlength="50" size="50">
+
+        <br>
+
+        <label for="surname" >Surname: </label>
+        <input type="text" name="surname" id="surname" maxlength="50" size="50" required>
+
+        <br>
+
+        <p>Gender:</p>
+        <label for="male">Male: </label>
+        <input type="radio" name="gender" id="male"> <br>
+
+        <label for="female">Female: </label>
+        <input type="radio" name="gender" id="female"> <br>
+
+        <label for="notsay">I prefer not to say: </label>
+        <input type="radio" name="gender" id="notsay">
+
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" maxlength="50" size="50">
+
+        <br><br>
+
+        <input type="checkbox" name="infocheck" id="info" >
+        <label for="info">I want to receive information about ews and offers.</label>
+
+        <br>
+
+        <input type="checkbox" name="declareCond" id="declare" >
+        <label for="declare">I declare that I have read and accept the general conditions of the program and the regulations on data protection.</label>
+
+        <br><br>
+
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
