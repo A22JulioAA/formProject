@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Page</title>
+    <title>Registration Form - My Website</title>
 
     <style>
         html{
@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <form action="service.php" method="post">
+    <form action="service.php" method="GET">
         
         <label for="name" >Name: </label>
         <input type="text" name="name" id="name" maxlength="50" size="50">
@@ -30,16 +30,19 @@
 
         <br>
 
-        <p>Gender:</p>
-        <label for="male">Male: </label>
-        <input type="radio" name="gender" id="male"> <br>
+        <fieldset>
+            <p>Gender:</p>
+            <label for="male">Male: </label>
+            <input type="field" name="gender" id="male"> <br>
 
-        <label for="female">Female: </label>
-        <input type="radio" name="gender" id="female"> <br>
+            <label for="female">Female: </label>
+            <input type="radio" name="gender" id="female"> <br>
 
-        <label for="notsay">I prefer not to say: </label>
-        <input type="radio" name="gender" id="notsay">
+            <label for="notsay">I prefer not to say: </label>
+            <input type="radio" name="gender" id="notsay">
 
+        </fieldset>
+        
         <br><br>
 
         <label for="email">Email: </label>
@@ -47,7 +50,7 @@
 
         <br><br>
 
-        <input type="checkbox" name="infocheck" id="info" >
+        <input type="checkbox" name="infocheck" id="info" checked>
         <label for="info">I want to receive information about ews and offers.</label>
 
         <br>
